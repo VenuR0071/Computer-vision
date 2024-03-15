@@ -4,7 +4,7 @@ from ultralytics.utils.plotting import Annotator  # ultralytics.yolo.utils.plott
 import time
 
 model = YOLO('yolov8x.pt')
-#cap = cv2.VideoCapture('rtsp://admin:Admin123@192.168.29.99:554/Streaming/Channels/1')
+#cap = cv2.VideoCapture()
 display_width = 800 # Example width
 display_height = 600  # Example height
 
@@ -14,13 +14,13 @@ classes = [0, 1]
 # Set the confidence threshold
 conf_thresh = 0.7
 # IP Camera URL
-camera_url = 'rtsp://admin:Admin123@192.168.29.99:554/Streaming/Channels/1'
+camera_url = 'your ip camera url'
 
 
 
 # Retry logic
 while True:
-    # Attempt to connect to the IP camera
+    # Attempt to connect to the IP camera or give '0' for webcam
     cap = cv2.VideoCapture(camera_url)
 
     if cap.isOpened():
