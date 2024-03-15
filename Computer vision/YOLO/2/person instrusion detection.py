@@ -16,7 +16,7 @@ classes = [0]  # Assuming classes 0 and 1 represent people
 conf_thresh = 0.3
 
 # IP Camera URL
-camera_url = 'rtsp://admin:Admin123@192.168.29.99:554/Streaming/Channels/1'
+camera_url = ''
 
 # Text font and color for detection alerts
 font = cv2.FONT_HERSHEY_SIMPLEX
