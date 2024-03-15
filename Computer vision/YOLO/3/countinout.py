@@ -51,7 +51,7 @@ def select_roi(image):
 model = YOLO("yolov8n.pt")
 
 # Capture a frame to select ROI
-cap = cv2.VideoCapture('rtsp://admin:Admin123@192.168.29.99:554/Streaming/Channels/1')
+cap = cv2.VideoCapture('your IP camera url ')
 assert cap.isOpened(), "Error reading video file"
 ret, frame = cap.read()
 cap.release()
@@ -75,7 +75,7 @@ static_width = 1366
 static_height = 768
 
 # Process video frames
-cap = cv2.VideoCapture('rtsp://admin:Admin123@192.168.29.99:554/Streaming/Channels/1')
+cap = cv2.VideoCapture('your IP camera url')
 frame_skip = 5  # Number of frames to skip
 buffer_size = 5  # Number of frames to buffer
 frame_buffer = []
