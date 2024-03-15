@@ -117,4 +117,4 @@ class RegionCounter:
 
 if __name__ == "__main__":
     counter = RegionCounter()
-    counter.run(source="C:\\Users\\Venu\\Downloads\\output_video.mp4", view_img=True, save_img=False)
+    counter.run(source="C:\\Users\\\\Downloads\\output_video.mp4", view_img=True, save_img=False)
